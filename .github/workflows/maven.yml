@@ -36,5 +36,5 @@ jobs:
     - name: Build Dockerfile
       run: |
         echo ${{ secrets.DOCKER_TOKEN }} | docker login -u iliannamaniatea --password-stdin
-        docker build -t test_accenture .
+        docker build -t iliannamaniatea/test_accenture .
         docker push iliannamaniatea/test_accenture
